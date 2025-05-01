@@ -1,7 +1,7 @@
 {
     "SX130x_conf": {
         "com_type": "SPI",
-        "com_path": "/dev/spidev0.0",
+        "com_path": "/dev/spidev0.1",
         "lorawan_public": true,
         "clksrc": 0,
         "antenna_gain": 0, /* antenna gain, in dBi */
@@ -68,7 +68,7 @@
         "radio_1": {
             "enable": true,
             "type": "SX1250",
-            "freq": 868500000,
+            "freq": 867500000,
             "rssi_offset": -215.4,
             "rssi_tcomp": {"coeff_a": 0, "coeff_b": 0, "coeff_c": 20.41, "coeff_d": 2162.56, "coeff_e": 0},
             "tx_enable": false
@@ -92,7 +92,7 @@
         /* change with default server address/ports */
         "server_address": "localhost",
         "serv_port_up": 1730,
-        "serv_port_down": 1730,
+        "serv_port_down": 1731,
         /* adjust the following parameters for your network */
         "keepalive_interval": 10,
         "stat_interval": 30,
