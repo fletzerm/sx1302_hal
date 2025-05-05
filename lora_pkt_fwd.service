@@ -1,0 +1,11 @@
+[Unit]
+Description=LoRa Packet Forwarder
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+WorkingDirectory=/home/recomputer/sx1302_hal/packet_forwarder
+ExecStart=/home/recomputer/sx1302_hal/packet_forwarder/lora_pkt_fwd -c global_conf.json.sx1250.EU868
+
+[Install]
+WantedBy=multi-user.target
